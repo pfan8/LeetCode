@@ -8,30 +8,29 @@
  */
 class Solution {
 public:
-    ListNode* removeNthFromEnd(ListNode* head, int n) {
+    ListNode* reverseBetween(ListNode* head, int m, int n) {
         /*
-            k_prev_node存储要删除节点的前一个节点
-            如果k_prev_node为NULL，删除头节点
+            一次遍历，依次翻转
             时间复杂度：O(n)
             空间复杂度：O(1)
         */
-        ListNode* k_prev_node = NULL;
-        ListNode* t = head;
-        while(t->next) {
-            if(n > 1)
-                n--;
-            else if(!k_prev_node) 
-                k_prev_node = head;
-            else 
-                k_prev_node = k_prev_node->next;
-            t = t->next;
+        ListNode dummy(-1);
+        dummy.next = head;
+        ListNode *prem, *posm, *pre, *t;
+        head = &dummy;
+        for(int i = 0; i <= n; i++) {
+            t = head->next;
+            if( i == m - 1 ) {
+                prem = head;
+                posm = t;
+            } else if( i > m ) {
+                head->next = pre;
+            }
+            pre = head;
+            head = t;
         }
-        if(!k_prev_node)
-            head = head->next;
-        else if(!k_prev_node->next)
-            k_prev_node->next = NULL;
-        else
-            k_prev_node->next = k_prev_node->next->next;
-        return head;
+        prem->next = pre;
+        posm->next = head;
+        return dummy.next;
     }
 };
