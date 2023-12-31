@@ -47,8 +47,8 @@
     },
     {
       "type": "text",
-      "version": 10,
-      "versionNonce": 230360428,
+      "version": 11,
+      "versionNonce": 1970361234,
       "isDeleted": false,
       "id": "UHrIi5B2CP37kiFIn8vOp",
       "fillStyle": "solid",
@@ -68,7 +68,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1703754220331,
+      "updated": 1704009981637,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -79,7 +79,7 @@
       "containerId": null,
       "originalText": "Empty",
       "lineHeight": 1.25,
-      "baseline": 18
+      "baseline": 17
     },
     {
       "type": "ellipse",
@@ -125,8 +125,8 @@
     },
     {
       "type": "text",
-      "version": 168,
-      "versionNonce": 57890644,
+      "version": 169,
+      "versionNonce": 1403840142,
       "isDeleted": false,
       "id": "k6FIUhJ0l8VA2WeVklbCr",
       "fillStyle": "solid",
@@ -146,7 +146,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1703754220331,
+      "updated": 1704009981638,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -157,7 +157,7 @@
       "containerId": null,
       "originalText": "Hold",
       "lineHeight": 1.25,
-      "baseline": 18
+      "baseline": 17
     },
     {
       "type": "arrow",
@@ -250,7 +250,7 @@
       "containerId": "REwyO67XUf1HFOmSDX1Nr",
       "originalText": "remain - 1",
       "lineHeight": 1.25,
-      "baseline": 19
+      "baseline": 20
     },
     {
       "type": "arrow",
@@ -414,8 +414,8 @@
     },
     {
       "type": "text",
-      "version": 253,
-      "versionNonce": 563050476,
+      "version": 254,
+      "versionNonce": 920981842,
       "isDeleted": false,
       "id": "zYGN9jTVje9WYEB_iBSrB",
       "fillStyle": "solid",
@@ -435,7 +435,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1703754220332,
+      "updated": 1704009981642,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -446,12 +446,12 @@
       "containerId": null,
       "originalText": "dp[i] - all states of day i\n\ndp[i][j] - all states of day i with remain count j\n\n\ndp[i][j][0] - empty state of day i with remain count j\ndp[i][j][1] - hold state of day i with remain count j",
       "lineHeight": 1.25,
-      "baseline": 168
+      "baseline": 167
     },
     {
       "type": "text",
-      "version": 104,
-      "versionNonce": 456477908,
+      "version": 105,
+      "versionNonce": 1655497934,
       "isDeleted": false,
       "id": "M5ml7RKFBETxOANZjtW5D",
       "fillStyle": "solid",
@@ -471,7 +471,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1703754220332,
+      "updated": 1704009981645,
       "link": null,
       "locked": false,
       "fontSize": 28,
@@ -482,7 +482,7 @@
       "containerId": null,
       "originalText": "dp[i+1][j][0] = max(dp[i][j][0], dp[i][j][1] + price[i])\ndp[i+1][j][1] = max(dp[i][j+1][0] - price[i], dp[i][j][1])",
       "lineHeight": 1.25,
-      "baseline": 60
+      "baseline": 59
     }
   ],
   "appState": {
